@@ -14,9 +14,17 @@ img {
 nav {
     background: black;
     margin: 20px;
-    /*position: fixed !important;*/
 }
-
+.leftNav {
+    position: fixed !important;
+    height: 500px;
+    width: 200px;
+    display: flex;
+}
+.leftNav a{
+    width: 100%;
+    cursor: pointer;
+}
 h2 {
     padding: 20px;
     border-bottom: 1px solid rgba(0,0,0,0.8)
