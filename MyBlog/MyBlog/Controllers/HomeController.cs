@@ -36,7 +36,7 @@ namespace MyBlog.Controllers
             };
             var post4 = new Post()
             {
-                ImageUrl = "https://www.thrashermagazine.com/mediaV2/k2/items/cache/65530175545cbc99f5d26d216fe5931c_S_JD.jpg?t=1588963377",
+                ImageUrl = "https://dailygrind.se/PhotoArchive/2012/20120718_DG_stefan.jpg",
                 Title = "Shmatty's COVX - 19 Part",
                 Description = "The LA ledge lord dials up combos like a mathematician. Pop, precision and a mean flick are all part of the equation. Check the work... ",
                 DatePosted = DateTime.Now
