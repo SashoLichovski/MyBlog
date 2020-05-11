@@ -41,18 +41,10 @@ namespace MyBlog.Controllers
                 Description = "The LA ledge lord dials up combos like a mathematician. Pop, precision and a mean flick are all part of the equation. Check the work... ",
                 DatePosted = DateTime.Now
             };
-            var post5 = new Post()
-            {
-                ImageUrl = "https://www.thrashermagazine.com/mediaV2/k2/items/cache/65530175545cbc99f5d26d216fe5931c_S_JD.jpg?t=1588963377",
-                Title = "Shmatty's COVX - 19 Part",
-                Description = "The LA ledge lord dials up combos like a mathematician. Pop, precision and a mean flick are all part of the equation. Check the work... ",
-                DatePosted = DateTime.Now
-            };
             posts.Add(post1);
             posts.Add(post2);
             posts.Add(post3);
             posts.Add(post4);
-            posts.Add(post5);
 
             return View(posts);
         }
