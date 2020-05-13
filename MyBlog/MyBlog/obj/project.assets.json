@@ -4333,6 +4333,42 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "MyBlog.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyBlog.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Models.dll": {}
+        }
+      },
+      "MyBlog.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MyBlog.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Repository.dll": {}
+        }
+      },
+      "MyBlog.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MyBlog.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Service.dll": {}
+        }
       }
     }
   },
@@ -11870,13 +11906,29 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "MyBlog.Models/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Models/MyBlog.Models.csproj",
+      "msbuildProject": "../MyBlog.Models/MyBlog.Models.csproj"
+    },
+    "MyBlog.Repository/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.MovieRepository/MyBlog.Repository.csproj",
+      "msbuildProject": "../MyBlog.MovieRepository/MyBlog.Repository.csproj"
+    },
+    "MyBlog.Service/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Service/MyBlog.Service.csproj",
+      "msbuildProject": "../MyBlog.Service/MyBlog.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "MyBlog.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11904,7 +11956,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sasho\\Desktop\\MVC\\MyBlog\\MyBlog\\MyBlog.Service\\MyBlog.Service.csproj": {
+              "projectPath": "C:\\Users\\Sasho\\Desktop\\MVC\\MyBlog\\MyBlog\\MyBlog.Service\\MyBlog.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

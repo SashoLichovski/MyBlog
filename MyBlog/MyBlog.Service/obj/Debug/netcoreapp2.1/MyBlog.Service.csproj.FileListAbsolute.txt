@@ -1,0 +1,13 @@
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Service.deps.json
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Service.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Service.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Models.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Repository.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Repository.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\bin\Debug\netcoreapp2.1\MyBlog.Models.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.csprojAssemblyReference.cache
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.AssemblyInfoInputs.cache
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.AssemblyInfo.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.csproj.CopyComplete
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Service\obj\Debug\netcoreapp2.1\MyBlog.Service.pdb
