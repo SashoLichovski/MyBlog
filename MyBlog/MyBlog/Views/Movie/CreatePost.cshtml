@@ -1,0 +1,36 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MyBlog.Models.Post
+@{ 
+    Layout = "_Layout";
+}
+<style>
+    #formContainer{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+    }
+    label{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+    .btn-dark{
+        margin-top: 10px;
+    }
+</style>
+<div class="container" id="formContainer">
+    <form asp-controller="Movie" asp-action="CreatePost">
+        <label asp-for="Title" class="control-label">Title</label>
+        <input asp-for="Title" class="form-control" />
+
+        <label asp-for="Description" class="control-label">Description</label>
+        <input asp-for="Description" class="form-control" />
+
+        <label asp-for="ImageUrl" class="control-label">Image URL</label>
+        <input asp-for="ImageUrl" class="form-control" />
+
+        <label asp-for="VideoUrl" class="control-label">Video URL</label>
+        <input asp-for="VideoUrl" class="form-control" />
+
+        <input type="submit" value="Create" class="btn btn-dark"/>
+    </form>
+</div>

@@ -4,15 +4,25 @@ using System.Linq;
 using System.Text;
 using MyBlog.Models;
 using MyBlog.Repository;
+using MyBlog.Repository.Interfaces;
+using MyBlog.Service.Interfaces;
 
 namespace MyBlog.Service
 {
-    public class PostService
+    public class PostService : IPostService
     {
-        public PostRepository PostRepository { get; set; }
-        public PostService()
+        public IPostRepository PostRepository { get; set; }
+        public PostService(IPostRepository postRepo)
         {
-            PostRepository = new PostRepository();
+            PostRepository = postRepo;
+        }
+        public void Save()
+        {
+            PostRepository.Save();
+        }
+        public void Add(Post post)
+        {
+            PostRepository.Add(post);
         }
         public List<Post> GetAll()
         {
@@ -21,7 +31,7 @@ namespace MyBlog.Service
 
         public Post GetById(int id)
         {
-            return PostRepository.Posts.FirstOrDefault(x => x.Id == id);
+            return PostRepository.GetById(id);
         }
     }
 }

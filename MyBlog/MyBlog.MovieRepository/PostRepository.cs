@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MyBlog.Models;
+using MyBlog.Repository.Interfaces;
 
 namespace MyBlog.Repository
 {

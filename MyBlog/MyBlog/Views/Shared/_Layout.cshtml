@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
 <html>
 <head>
     <title>My Movies</title>
@@ -12,9 +13,9 @@
         <h1 class="text-light">My Blog Site</h1>
     </nav>
     <nav class="navbar navbar-default leftNav">
-        <a href="/Home/Index" class="text-light">Home</a>
-        <a href="/Home/AboutUs" class="text-light">About Us</a>
-        <a class="text-light">Some links</a>
+        <a asp-controller="Movie" asp-action="Index" class="text-light">Home</a>
+        <a asp-controller="Info" asp-action="AboutUs" class="text-light">About Us</a>
+        <a asp-controller="Movie" asp-action="CreatePost" class="text-light">Create new Post</a>
         <a class="text-light">Some links</a>
         <a class="text-light">Some links</a>
         <a class="text-light">Some links</a>

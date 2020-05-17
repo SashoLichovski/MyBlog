@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyBlog.Repository;
+using MyBlog.Repository.Interfaces;
+using MyBlog.Service;
+using MyBlog.Service.Interfaces;
 
 namespace MyBlog
 {
@@ -33,6 +37,9 @@ namespace MyBlog
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSingleton<IPostRepository, PostFileRepository>();
+            services.AddSingleton<IPostService, PostService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +63,7 @@ namespace MyBlog
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Movie}/{action=Index}/{id?}");
             });
         }
     }
