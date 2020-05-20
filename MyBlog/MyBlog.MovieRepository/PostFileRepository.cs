@@ -26,6 +26,8 @@ namespace MyBlog.Repository
         }
         public void Add(Post post)
         {
+            post.Id = GetAll().Max(x => x.Id) + 1;
+            post.DatePosted = DateTime.Now;
             Posts.Add(post);
         }
         public List<Post> GetAll()

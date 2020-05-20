@@ -19,6 +19,7 @@
 </style>
 <div class="container" id="formContainer">
     <form asp-controller="Movie" asp-action="CreatePost">
+
         <label asp-for="Title" class="control-label">Title</label>
         <input asp-for="Title" class="form-control" />
 
@@ -31,6 +32,8 @@
         <label asp-for="VideoUrl" class="control-label">Video URL</label>
         <input asp-for="VideoUrl" class="form-control" />
 
-        <input type="submit" value="Create" class="btn btn-dark"/>
+        <input type="submit" value="Create" class="btn btn-dark" />
+
+        <div asp-validation-summary="All" class="text-danger" style="text-align: start"></div>
     </form>
 </div>

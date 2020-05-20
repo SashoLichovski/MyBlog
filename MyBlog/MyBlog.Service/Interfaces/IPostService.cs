@@ -7,9 +7,8 @@ namespace MyBlog.Service.Interfaces
 {
     public interface IPostService
     {
-        void Save();
-        void Add(Post post);
         Post GetById(int id);
         List<Post> GetAll();
+        void AddPost(Post post);
     }
 }

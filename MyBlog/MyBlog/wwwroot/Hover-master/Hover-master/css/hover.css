@@ -2457,7 +2457,6 @@
 
 /* Grow Shadow */
 .hvr-grow-shadow {
-  display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -3498,7 +3497,6 @@
 
 /* Icon Grow Rotate */
 .hvr-icon-grow-rotate {
-  display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);

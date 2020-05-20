@@ -16,13 +16,10 @@ namespace MyBlog.Service
         {
             PostRepository = postRepo;
         }
-        public void Save()
-        {
-            PostRepository.Save();
-        }
-        public void Add(Post post)
+        public void AddPost(Post post)
         {
             PostRepository.Add(post);
+            PostRepository.Save();
         }
         public List<Post> GetAll()
         {

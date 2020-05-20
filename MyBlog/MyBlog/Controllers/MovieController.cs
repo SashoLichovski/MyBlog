@@ -41,9 +41,15 @@ namespace MyBlog.Controllers
         [HttpPost]
         public IActionResult CreatePost(Post post)
         {
-            PostService.Add(post);
-            PostService.Save();
+            if (ModelState.IsValid)
+            {
+            PostService.AddPost(post);
             return Redirect("Index");
+            }
+            else
+            {
+                return View(post);
+            }
         }
     }
 }
