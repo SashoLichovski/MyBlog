@@ -38,7 +38,7 @@ namespace MyBlog
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddSingleton<IPostRepository, PostFileRepository>();
+            services.AddSingleton<IPostRepository, PostSqlRepository>();
             services.AddSingleton<IPostService, PostService>();
         }
 
