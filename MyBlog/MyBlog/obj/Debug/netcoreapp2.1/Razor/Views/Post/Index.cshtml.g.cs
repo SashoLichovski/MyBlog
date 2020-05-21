@@ -83,7 +83,7 @@ namespace AspNetCore
             WriteLiteral("</p>\r\n                ");
             EndContext();
             BeginContext(360, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c77c77a4ecf4c728c724d487e09cfc7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f63bb4bce3734e51990613b589ff1a57", async() => {
                 BeginContext(463, 10, true);
                 WriteLiteral("Read story");
                 EndContext();
@@ -181,7 +181,7 @@ WriteAttributeValue("", 772, Model[i].ImageUrl, 772, 18, false);
             WriteLiteral("</p>\r\n                ");
             EndContext();
             BeginContext(942, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75693b0685a6498aa3cd11e61a6ae505", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8eead4d92e34d269c6ea5881483d678", async() => {
                 BeginContext(1045, 10, true);
                 WriteLiteral("Read story");
                 EndContext();

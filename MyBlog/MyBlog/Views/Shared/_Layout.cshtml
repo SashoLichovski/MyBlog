@@ -1,4 +1,16 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ 
+    var test = "";
+    if (ViewBag.header == "Enjoy the latest skate news and videos")
+    {
+        test = "";
+    }
+    else
+    {
+        test = "disabled";
+    }
+
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,8 +54,8 @@
                 </li>
             </ul>
             <form asp-controller="Post" asp-action="Index" >
-                <input name="Title" value="" placeholder="Title search" id="searchInput"/>
-                <input type="submit" value="Search" id="searchBtn"/>
+                <input name="Title" value="" placeholder="Title search" id="searchInput" @test/>
+                <input type="submit" value="Search" id="searchBtn" @test/>
             </form>
         </div>
     </nav>
