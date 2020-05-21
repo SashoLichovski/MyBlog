@@ -9,7 +9,7 @@ using System.Text;
 
 namespace MyBlog.Repository
 {
-    public class PostFileRepository : IPostRepository
+    public class PostFileRepository
     {
         public List<Post> Posts { get; set; }
         public PostFileRepository()

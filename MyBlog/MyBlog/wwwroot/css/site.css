@@ -4,13 +4,17 @@
     object-fit: cover;
     margin: auto;
 }
-
 h2 {
     margin-top: 100px;
     padding: 20px;
     border-bottom: 1px solid rgba(0,0,0,0.8)
 }
-
+#headerContainer {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 100px;
+}
 .contentContainer {
     width: 60%;
     margin: auto;
@@ -39,4 +43,17 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.2em;
+}
+#searchInput{
+    padding: 5px;
+    border-radius: 5px;
+}
+#searchBtn {
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: bold;
+}
+li{
+    margin-right: 10px
 }

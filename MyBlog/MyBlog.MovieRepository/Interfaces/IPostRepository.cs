@@ -11,5 +11,6 @@ namespace MyBlog.Repository.Interfaces
         void Add(Post post);
         List<Post> GetAll();
         Post GetById(int id);
+        List<Post> SearchPost(string search);
     }
 }

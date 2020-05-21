@@ -63,7 +63,7 @@ namespace MyBlog
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Movie}/{action=Index}/{id?}");
+                    template: "{controller=Post}/{action=Index}/{id?}");
             });
         }
     }

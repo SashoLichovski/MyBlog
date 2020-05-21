@@ -23,8 +23,6 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.T
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.TagHelpers.output.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorCoreGenerate.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Info\AboutUs.cshtml.g.cs
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Movie\Index.cshtml.g.cs
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Movie\storyDetails.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorTargetAssemblyInfo.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorTargetAssemblyInfo.cs
@@ -32,4 +30,6 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.V
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.csproj.CopyComplete
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.pdb
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Movie\CreatePost.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\CreatePost.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\Index.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\storyDetails.cshtml.g.cs

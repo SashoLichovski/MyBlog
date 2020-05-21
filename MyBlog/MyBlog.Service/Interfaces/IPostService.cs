@@ -10,5 +10,6 @@ namespace MyBlog.Service.Interfaces
         Post GetById(int id);
         List<Post> GetAll();
         void AddPost(Post post);
+        List<Post> SearchPost(string search); 
     }
 }

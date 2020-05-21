@@ -19,7 +19,7 @@ namespace MyBlog.Service
         public void AddPost(Post post)
         {
             PostRepository.Add(post);
-            PostRepository.Save();
+            //PostRepository.Save(); <--- WHEN WORKING WITH PostFileRepository
         }
         public List<Post> GetAll()
         {
@@ -29,6 +29,11 @@ namespace MyBlog.Service
         public Post GetById(int id)
         {
             return PostRepository.GetById(id);
+        }
+
+        public List<Post> SearchPost(string search)
+        {
+            return PostRepository.SearchPost(search);
         }
     }
 }

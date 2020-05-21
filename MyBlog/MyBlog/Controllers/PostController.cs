@@ -10,18 +10,23 @@ using Newtonsoft.Json;
 
 namespace MyBlog.Controllers
 {
-    public class MovieController : Controller
+    public class PostController : Controller
     {
         public IPostService PostService { get; set; }
-        public MovieController(IPostService postService)
+        public PostController(IPostService postService)
         {
             PostService = postService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string title)
         {
             ViewBag.header = "Enjoy the latest skate news and videos";
             var postList = PostService.GetAll();
+            var searchedPosts = PostService.SearchPost(title);
+            if (title != null)
+            {
+                postList = searchedPosts;
+            }
             return View(postList);
         }
 
@@ -35,7 +40,7 @@ namespace MyBlog.Controllers
         public IActionResult CreatePost()
         {
             ViewBag.header = "Create new Post";
-           var newPost = new Post();
+            var newPost = new Post();
             return View(newPost);
         }
         [HttpPost]
