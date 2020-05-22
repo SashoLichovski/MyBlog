@@ -32,6 +32,13 @@
         <label asp-for="VideoUrl" class="control-label">Video URL</label>
         <input asp-for="VideoUrl" class="form-control" />
 
+        <label asp-for="Category" class="control-label">Category</label>
+        <select asp-for="Category" class="form-control">
+            <option value="Skate">Skate</option>
+            <option value="Snowboard">Snowboard</option>
+            <option value="Rollerblade">Rollerblade</option>
+        </select>
+
         <input type="submit" value="Create" class="btn btn-dark" />
 
         <div asp-validation-summary="All" class="text-danger" style="text-align: start"></div>

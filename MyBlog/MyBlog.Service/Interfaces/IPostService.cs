@@ -1,14 +1,12 @@
 ﻿using MyBlog.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MyBlog.Service.Interfaces
 {
     public interface IPostService
     {
         Post GetById(int id);
-        List<Post> GetAll();
+        List<Post> GetAll(string category);
         void AddPost(Post post);
         List<Post> SearchPost(string search); 
     }

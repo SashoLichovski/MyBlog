@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using MyBlog.Models;
-using MyBlog.Repository;
 using MyBlog.Repository.Interfaces;
 using MyBlog.Service.Interfaces;
 
@@ -19,11 +15,10 @@ namespace MyBlog.Service
         public void AddPost(Post post)
         {
             PostRepository.Add(post);
-            //PostRepository.Save(); <--- WHEN WORKING WITH PostFileRepository
         }
-        public List<Post> GetAll()
+        public List<Post> GetAll(string category)
         {
-            return PostRepository.GetAll();
+            return PostRepository.GetAll(category);
         }
 
         public Post GetById(int id)

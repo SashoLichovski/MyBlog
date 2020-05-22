@@ -1,15 +1,10 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{ 
-    var test = "";
-    if (ViewBag.header == "Enjoy the latest skate news and videos")
+    var forDisable = "";
+    if (ViewBag.header != "X-news Presents")
     {
-        test = "";
+        forDisable = "disable";
     }
-    else
-    {
-        test = "disabled";
-    }
-
 }
 <!DOCTYPE html>
 <html>
@@ -18,26 +13,11 @@
     <link rel="stylesheet" href="~/css/site.css"  />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="~/Hover-master/Hover-master/css/hover.css" rel="stylesheet" />
-    <style>
-        .navLink {
-            font-size: 1.1em;
-        }
-        nav {
-            position: fixed !important;
-            z-index: 1 !important;
-            width: 100%;
-            top: 0;
-            margin: 0;
-        }
-        #navbarNav{
-            justify-content: flex-end;
-        }
-    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-light hvr-skew-backward" asp-controller="Post" asp-action="Index" ><h3>Skater Magazine</h3></a>
+        <a class="navbar-brand text-light hvr-buzz-out" asp-controller="Post" asp-action="Index" ><h3>X - News</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,8 +34,8 @@
                 </li>
             </ul>
             <form asp-controller="Post" asp-action="Index" >
-                <input name="Title" value="" placeholder="Title search" id="searchInput" @test/>
-                <input type="submit" value="Search" id="searchBtn" @test/>
+                <input name="Title" value="" placeholder="Title search" id="searchInput" @forDisable/>
+                <input type="submit" value="Search" id="searchBtn" @forDisable/>
             </form>
         </div>
     </nav>

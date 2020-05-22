@@ -9,6 +9,21 @@ h2 {
     padding: 20px;
     border-bottom: 1px solid rgba(0,0,0,0.8)
 }
+.navLink {
+    font-size: 1.1em;
+}
+
+nav {
+    position: fixed !important;
+    z-index: 1 !important;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
 #headerContainer {
     margin: auto;
     width: 60%;
@@ -56,4 +71,20 @@ p {
 }
 li{
     margin-right: 10px
+}
+#chooseSportContainer {
+    position: absolute;
+    display: grid;
+    top: 80px;
+    /*width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-around;*/
+}
+.sportLink{
+    font-size: 1.3em;
+    width: 200px;
+    margin: 15px;
 }

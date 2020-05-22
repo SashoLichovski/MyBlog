@@ -1,7 +1,5 @@
 ﻿using MyBlog.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MyBlog.Repository.Interfaces
 {
@@ -9,7 +7,7 @@ namespace MyBlog.Repository.Interfaces
     {
         void Save();
         void Add(Post post);
-        List<Post> GetAll();
+        List<Post> GetAll(string category);
         Post GetById(int id);
         List<Post> SearchPost(string search);
     }

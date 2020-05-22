@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MyBlog.Models;
-using MyBlog.Service;
 using MyBlog.Service.Interfaces;
-using Newtonsoft.Json;
 
 namespace MyBlog.Controllers
 {
@@ -18,10 +12,16 @@ namespace MyBlog.Controllers
             PostService = postService;
         }
 
-        public IActionResult Index(string title)
+        public IActionResult Index(string title, string category)
         {
-            ViewBag.header = "Enjoy the latest skate news and videos";
-            var postList = PostService.GetAll();
+            ViewBag.header = "X-news Presents";
+
+            if (category == null)
+            {
+                category = "Skate";
+            }
+            var postList = PostService.GetAll(category);
+
             var searchedPosts = PostService.SearchPost(title);
             if (title != null)
             {
