@@ -1,0 +1,32 @@
+﻿@model List<MyBlog.Models.GalleryImage>
+@{ 
+    Layout = "_Layout";
+}
+
+    <div id="galleryContainer">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <img data-toggle="modal" data-target="#staticBackdrop-@i" class="galleryImgs hvr-grow-shadow" src="@Model[i].ImageUrl" alt="Alternate Text" width="300" />
+            <div class="modal fade" id="staticBackdrop-@i" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Full image</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="@Model[i].ImageUrl" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        @foreach (var image in Model)
+        {
+        }
+    </div>

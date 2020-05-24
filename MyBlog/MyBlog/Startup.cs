@@ -40,6 +40,8 @@ namespace MyBlog
 
             services.AddSingleton<IPostRepository, PostRepository>();
             services.AddSingleton<IPostService, PostService>();
+            services.AddSingleton<IGalleryService, GalleryService>();
+            services.AddSingleton<IGalleryImageRepository, GalleryImageRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

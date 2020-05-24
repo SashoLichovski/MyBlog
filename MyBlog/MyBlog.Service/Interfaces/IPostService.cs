@@ -6,7 +6,7 @@ namespace MyBlog.Service.Interfaces
     public interface IPostService
     {
         Post GetById(int id);
-        List<Post> GetAll(string category);
+        List<Post> GetAllByCategory(string category);
         void AddPost(Post post);
         List<Post> SearchPost(string search); 
     }

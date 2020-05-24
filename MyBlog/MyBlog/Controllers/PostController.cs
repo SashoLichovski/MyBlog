@@ -20,7 +20,7 @@ namespace MyBlog.Controllers
             {
                 category = "Skate";
             }
-            var postList = PostService.GetAll(category);
+            var postList = PostService.GetAllByCategory(category);
 
             var searchedPosts = PostService.SearchPost(title);
             if (title != null)

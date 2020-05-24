@@ -28,7 +28,7 @@ namespace MyBlog.Repository
             }
         }
 
-        public List<Post> GetAll(string category)
+        public List<Post> GetAllByCategory(string category)
         {
             var allPosts = new List<Post>();
             using (var cnn = new SqlConnection("Data Source = .\\sqlexpress; Initial Catalog = MyBlog; Integrated Security = true;"))

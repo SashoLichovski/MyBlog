@@ -16,9 +16,9 @@ namespace MyBlog.Service
         {
             PostRepository.Add(post);
         }
-        public List<Post> GetAll(string category)
+        public List<Post> GetAllByCategory(string category)
         {
-            return PostRepository.GetAll(category);
+            return PostRepository.GetAllByCategory(category);
         }
 
         public Post GetById(int id)

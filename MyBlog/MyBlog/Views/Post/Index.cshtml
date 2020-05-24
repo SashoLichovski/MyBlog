@@ -23,13 +23,13 @@
                 <br />
                 <div>Posted on: @Model[i].DatePosted</div>
             </div>
-            <img src="@Model[i].ImageUrl" />
+            <img class="homeImgs" src="@Model[i].ImageUrl" />
         </div>
     }
     else
     {
         <div class="contentContainer  hvr-grow-shadow">
-            <img src="@Model[i].ImageUrl" />
+            <img class="homeImgs" src="@Model[i].ImageUrl" />
             <div class="infoContainer2">
                 <h3>@Model[i].Title</h3>
                 <p>@Model[i].Description</p>

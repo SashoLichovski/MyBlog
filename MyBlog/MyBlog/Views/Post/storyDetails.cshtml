@@ -5,14 +5,14 @@
 }
 
 <div class="container" style="text-align: center; width: 50%;">
-    <img src="@Model.ImageUrl" />
-    <h1>@Model.Title</h1>
-    <div>@Model.Description</div>
+    <h3 id="modelTitle">@Model.Title</h3>
+    <img class="homeImgs" src="@Model.ImageUrl" />
+    <div id="description">@Model.Description</div>
     <iframe width="420" height="315"
             src="https://www.youtube.com/embed/@Model.VideoUrl">
     </iframe>
     <div>
-        <span>@Model.DatePosted</span>
+        <span>Posted: @Model.DatePosted</span>
     </div>
     <form asp-controller="Post" asp-action="Index">
         <input name="category" value="@Model.Category" style="display: none"/>

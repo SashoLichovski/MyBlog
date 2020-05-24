@@ -22,6 +22,7 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.A
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.TagHelpers.input.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.TagHelpers.output.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorCoreGenerate.cache
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Gallery\Overview.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Info\AboutUs.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\CreatePost.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\Index.cshtml.g.cs

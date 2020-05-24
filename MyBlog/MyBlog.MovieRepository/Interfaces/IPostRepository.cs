@@ -7,7 +7,7 @@ namespace MyBlog.Repository.Interfaces
     {
         void Save();
         void Add(Post post);
-        List<Post> GetAll(string category);
+        List<Post> GetAllByCategory(string category);
         Post GetById(int id);
         List<Post> SearchPost(string search);
     }
