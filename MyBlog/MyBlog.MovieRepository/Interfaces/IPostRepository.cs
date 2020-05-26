@@ -5,7 +5,6 @@ namespace MyBlog.Repository.Interfaces
 {
     public interface IPostRepository
     {
-        void Save();
         void Add(Post post);
         List<Post> GetAllByCategory(string category);
         Post GetById(int id);

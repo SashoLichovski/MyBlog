@@ -38,10 +38,10 @@ namespace MyBlog
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddSingleton<IPostRepository, PostRepository>();
+            services.AddSingleton<IPostRepository, PostFileRepository>();
             services.AddSingleton<IPostService, PostService>();
             services.AddSingleton<IGalleryService, GalleryService>();
-            services.AddSingleton<IGalleryImageRepository, GalleryImageRepository>();
+            services.AddSingleton<IGalleryImageRepository, GalleryImageFileRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

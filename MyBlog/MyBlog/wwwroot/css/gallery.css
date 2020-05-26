@@ -33,6 +33,10 @@
         margin: 10px 0;
         cursor: pointer;
     }
+    #galleryContainer {
+        width: 90%;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (max-width : 700px) {
@@ -43,5 +47,16 @@
         width: 90% !important;
         margin: auto !important;
         margin-top: 60px !important;
+    }
+    .galleryImgs {
+        width: 190px;
+        height: 100px;
+        object-fit: cover;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    #galleryContainer {
+        width: 90%;
+        justify-content: space-around;
     }
 }

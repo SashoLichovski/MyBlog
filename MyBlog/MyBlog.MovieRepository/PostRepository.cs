@@ -8,6 +8,7 @@ namespace MyBlog.Repository
 {
     public class PostRepository : IPostRepository
     {
+        
         public void Add(Post post)
         {
             using (var cnn = new SqlConnection("Data Source = .\\sqlexpress; Initial Catalog = MyBlog; Integrated Security = true;"))
@@ -83,11 +84,6 @@ namespace MyBlog.Repository
                 }
             }
             return newPost;
-        }
-
-        public void Save()
-        {
-            throw new NotImplementedException();
         }
 
         public List<Post> SearchPost(string search)

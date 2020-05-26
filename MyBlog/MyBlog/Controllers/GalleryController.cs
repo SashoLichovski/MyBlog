@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyBlog.Repository.Interfaces;
 using MyBlog.Service.Interfaces;
+using Newtonsoft.Json;
 
 namespace MyBlog.Controllers
 {
