@@ -27,6 +27,10 @@ namespace MyBlog.Repository
 
                 cmd.ExecuteNonQuery();
             }
+            // While working with SqlRepo - Adding all new POST data to file 
+            // as well for UI presentation purposes on other PC's
+            var fileRepo = new PostFileRepository();
+            fileRepo.Add(post);
         }
 
         public List<Post> GetAllByCategory(string category)
