@@ -17,7 +17,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img src="@Model[i].ImageUrl" />
+                            <img src="@Model[i].ImageUrl" class="fullImage"/>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -25,8 +25,5 @@
                     </div>
                 </div>
             </div>
-        }
-        @foreach (var image in Model)
-        {
         }
     </div>

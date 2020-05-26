@@ -1,0 +1,197 @@
+﻿.homeImgs {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+}
+
+#header {
+    margin-top: 100px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.8)
+}
+
+#description{
+    padding: 20px;
+    font-size: 1.1em;
+    font-family: cursive;
+}
+
+#modelTitle {
+    padding: 10px;
+    /*width: 500px;
+    margin: auto;*/
+}
+
+.navLink {
+    font-size: 1.1em;
+}
+
+nav {
+    position: fixed !important;
+    z-index: 1 !important;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+} 
+
+#headerContainer {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 100px;
+} 
+
+.contentContainer {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+} 
+
+.infoContainer2 {
+    padding: 20px;
+    margin: auto;
+    text-align: right;
+    width: inherit
+}
+
+.infoContainer {
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    width: inherit
+}
+
+.homePostTitle {
+    font-size: 27px;
+}
+
+.homePostDescription {
+    height: 58px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2em;
+}
+
+#searchInput{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#searchBtn {
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-right: 10px
+}
+
+#chooseSportContainer {
+    position: absolute;
+    display: grid;
+    top: 80px;
+}
+
+.sportLink{
+    font-size: 1.3em;
+    width: 200px;
+    margin: 15px;
+}
+
+/*Responsive css*/
+@media only screen and (max-width : 1124px) {
+    .navbar-nav {
+        flex-direction: initial !important;
+        justify-content: flex-end;
+    }
+    #searchForm {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #searchInput {
+        margin-right: 5px;
+    }
+    #chooseSportContainer {
+        position: initial;
+        display: flex;
+        justify-content: center;
+    }
+    .sportLink {
+        font-size: 1em;
+        width: 120px !important;
+        padding: 5px 8px;
+        margin: 15px;
+    }
+    .contentContainer {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .homeImgs {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+        margin: auto;
+    }
+    .homePostTitle {
+        font-size: 20px;
+    }
+    .homePostDescription {
+        font-size: 1em;
+        height: 46px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px !important;
+    }
+    .btn {
+        padding: 4px 6px !important;
+    }
+    .container {
+        width: 90% !important;
+    }
+    #header {
+        margin-top: 50px;
+    }
+    #headerContainer {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+    .contentContainer {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+        display: grid;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .infoContainer {
+        text-align: center;
+    }
+    .infoContainer2 {
+        text-align: center;
+    }
+    .container {
+        width: 90% !important;
+    }
+    #header {
+        margin-top: 50px;
+    }
+    #headerContainer {
+        margin-top: 50px;
+    }
+}

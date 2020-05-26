@@ -17,3 +17,31 @@
 .modal-dialog {
     max-width: fit-content !important;
 }
+
+.fullImage {
+    width: 850px;
+}
+
+@media only screen and (max-width : 1124px) {
+    .fullImage {
+        width: 650px;
+    }
+    .galleryImgs {
+        width: 230px;
+        height: 130px;
+        object-fit: cover;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .fullImage {
+        width: 400px;
+    }
+    .modal-dialog {
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: 60px !important;
+    }
+}

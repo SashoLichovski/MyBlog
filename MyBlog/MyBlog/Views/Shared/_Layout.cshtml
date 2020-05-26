@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>MyBlog</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
     <link rel="stylesheet" href="~/css/gallery.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="~/Hover-master/Hover-master/css/hover.css" rel="stylesheet" />
@@ -37,7 +37,7 @@
                     <a class="nav-link text-light navLink" asp-controller="Post" asp-action="CreatePost">Add post</a>
                 </li>
             </ul>
-            <form asp-controller="Post" asp-action="Index" >
+            <form asp-controller="Post" asp-action="Index" id="searchForm">
                 <input name="Title" value="" placeholder="Title search" id="searchInput" @forDisable/>
                 <input type="submit" value="Search" id="searchBtn" @forDisable/>
             </form>
