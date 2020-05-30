@@ -1,0 +1,7 @@
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\bin\Debug\netcoreapp2.1\MyBlog.Data.deps.json
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\bin\Debug\netcoreapp2.1\MyBlog.Data.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\bin\Debug\netcoreapp2.1\MyBlog.Data.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\obj\Debug\netcoreapp2.1\MyBlog.Data.AssemblyInfoInputs.cache
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\obj\Debug\netcoreapp2.1\MyBlog.Data.AssemblyInfo.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\obj\Debug\netcoreapp2.1\MyBlog.Data.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.Data\obj\Debug\netcoreapp2.1\MyBlog.Data.pdb

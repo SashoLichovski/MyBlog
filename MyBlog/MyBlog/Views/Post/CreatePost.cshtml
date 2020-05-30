@@ -1,23 +1,12 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model MyBlog.Models.Post
+@model MyBlog.Data.Post
 @{ 
     Layout = "_Layout";
 }
 <style>
-    #formContainer{
-        width: 30%;
-        margin: auto;
-        text-align: center;
-    }
-    label{
-        font-size: 1.3em;
-        font-weight: 500;
-    }
-    .btn-dark{
-        margin-top: 10px;
-    }
+    
 </style>
-<div class="container" id="formContainer">
+<div class="formContainer">
     <form asp-controller="Post" asp-action="CreatePost">
 
         <label asp-for="Title" class="control-label">Title</label>

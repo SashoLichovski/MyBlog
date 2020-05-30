@@ -8,11 +8,11 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.d
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.pdb
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Views.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Views.pdb
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Models.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Data.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Repository.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Service.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Service.pdb
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Models.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Data.pdb
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\bin\Debug\netcoreapp2.1\MyBlog.Repository.pdb
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.csprojAssemblyReference.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorAssemblyInfo.cache
@@ -26,8 +26,11 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Vi
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Info\AboutUs.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\CreatePost.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\Index.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\ManagePosts.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\ModifyPost.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\storyDetails.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorTargetAssemblyInfo.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorTargetAssemblyInfo.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.Views.pdb

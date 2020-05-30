@@ -4617,21 +4617,28 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "MyBlog.Models/1.0.0": {
+      "MyBlog.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
+        },
         "compile": {
-          "bin/placeholder/MyBlog.Models.dll": {}
+          "bin/placeholder/MyBlog.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MyBlog.Models.dll": {}
+          "bin/placeholder/MyBlog.Data.dll": {}
         }
       },
       "MyBlog.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "MyBlog.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
+          "MyBlog.Data": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -4646,6 +4653,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
           "MyBlog.Repository": "1.0.0"
         },
         "compile": {
@@ -12678,10 +12687,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "MyBlog.Models/1.0.0": {
+    "MyBlog.Data/1.0.0": {
       "type": "project",
-      "path": "../MyBlog.Models/MyBlog.Models.csproj",
-      "msbuildProject": "../MyBlog.Models/MyBlog.Models.csproj"
+      "path": "../MyBlog.Data/MyBlog.Data.csproj",
+      "msbuildProject": "../MyBlog.Data/MyBlog.Data.csproj"
     },
     "MyBlog.Repository/1.0.0": {
       "type": "project",

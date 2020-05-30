@@ -1,8 +1,8 @@
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Repository.deps.json
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Repository.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Repository.pdb
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Models.dll
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Models.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Data.dll
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\bin\Debug\netcoreapp2.1\MyBlog.Data.pdb
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\obj\Debug\netcoreapp2.1\MyBlog.Repository.csprojAssemblyReference.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\obj\Debug\netcoreapp2.1\MyBlog.Repository.AssemblyInfoInputs.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog.MovieRepository\obj\Debug\netcoreapp2.1\MyBlog.Repository.AssemblyInfo.cs

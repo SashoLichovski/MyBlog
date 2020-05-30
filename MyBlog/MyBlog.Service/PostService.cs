@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MyBlog.Models;
+using MyBlog.Data;
 using MyBlog.Repository.Interfaces;
 using MyBlog.Service.Interfaces;
 
@@ -29,6 +29,21 @@ namespace MyBlog.Service
         public List<Post> SearchPost(string search)
         {
             return PostRepository.SearchPost(search);
+        }
+
+        public List<Post> GetAll()
+        {
+            return PostRepository.GetAll();
+        }
+
+        public void RemovePost(int id)
+        {
+            PostRepository.RemovePost(id);
+        }
+
+        public void UpdatePost(Post post)
+        {
+            PostRepository.UpdatePost(post);
         }
     }
 }

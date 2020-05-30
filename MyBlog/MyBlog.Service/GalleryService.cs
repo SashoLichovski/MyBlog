@@ -1,4 +1,4 @@
-﻿using MyBlog.Models;
+﻿using MyBlog.Data;
 using MyBlog.Repository.Interfaces;
 using MyBlog.Service.Interfaces;
 using System;

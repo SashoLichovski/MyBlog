@@ -1,9 +1,9 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{ 
-    var forDisable = "";
+    var display = "initial";
     if (ViewBag.header != "X-news Presents")
     {
-        forDisable = "disable";
+        display = "none";
     }
 }
 <!DOCTYPE html>
@@ -34,12 +34,12 @@
                     <a class="nav-link text-light navLink" asp-controller="Gallery" asp-action="Overview">Gallery</a>
                 </li>
                 <li class="nav-item hvr-grow-rotate">
-                    <a class="nav-link text-light navLink" asp-controller="Post" asp-action="CreatePost">Add post</a>
+                    <a class="nav-link text-light navLink" asp-controller="Post" asp-action="ManagePosts">Manage Posts</a>
                 </li>
             </ul>
-            <form asp-controller="Post" asp-action="Index" id="searchForm">
-                <input name="Title" value="" placeholder="Title search" id="searchInput" @forDisable/>
-                <input type="submit" value="Search" id="searchBtn" @forDisable/>
+            <form asp-controller="Post" asp-action="Index" id="searchForm" style="display: @display">
+                <input name="Title" value="" placeholder="Title search" id="searchInput" />
+                <input type="submit" value="Search" id="searchBtn" />
             </form>
         </div>
     </nav>

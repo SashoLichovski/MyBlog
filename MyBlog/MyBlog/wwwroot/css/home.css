@@ -80,7 +80,7 @@ nav {
     font-size: 1.2em;
 }
 
-#searchInput{
+#searchInput {
     padding: 5px;
     border-radius: 5px;
 }
@@ -107,6 +107,31 @@ nav {
     width: 200px;
     margin: 15px;
 }
+
+.formContainer {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+label {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.btn-dark {
+    margin-top: 10px;
+}
+
+#addPostBtn {
+    margin-bottom: 20px;
+}
+
+#managePostContainer {
+    width: 80%;
+    margin: auto;
+}
+
 
 /*Responsive css*/
 @media only screen and (max-width : 1124px) {

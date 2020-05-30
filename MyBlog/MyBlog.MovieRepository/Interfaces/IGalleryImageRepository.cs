@@ -1,4 +1,4 @@
-﻿using MyBlog.Models;
+﻿using MyBlog.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;

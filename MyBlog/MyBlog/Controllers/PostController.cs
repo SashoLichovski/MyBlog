@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyBlog.Models;
+using MyBlog.Data;
 using MyBlog.Service.Interfaces;
 
 namespace MyBlog.Controllers
@@ -55,6 +55,38 @@ namespace MyBlog.Controllers
             {
                 return View(post);
             }
+        }
+
+        public IActionResult ManagePosts(string title)
+        {
+            ViewBag.header = "Manage posts";
+            var posts = PostService.GetAll();
+            if (title != null)
+            {
+                var searchedPosts = PostService.SearchPost(title);
+                posts = searchedPosts;
+            }
+            return View(posts);
+        }
+
+        public IActionResult DeletePost(int id)
+        {
+            PostService.RemovePost(id);
+            return RedirectToAction("ManagePosts");
+        }
+
+        public IActionResult ModifyPost(int id)
+        {
+            ViewBag.header = "Modify Post";
+            var post = PostService.GetById(id);
+            return View(post);
+        }
+        [HttpPost]
+        public IActionResult ModifyPost(Post post)
+        {
+            ViewBag.header = "Modify Post";
+            PostService.UpdatePost(post);
+            return RedirectToAction("ManagePosts");
         }
     }
 }
