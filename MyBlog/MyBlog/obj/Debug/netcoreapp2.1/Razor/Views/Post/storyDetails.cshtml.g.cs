@@ -102,7 +102,7 @@ WriteAttributeValue("", 411, Model.VideoUrl, 411, 15, false);
             WriteLiteral("</span>\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(520, 245, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ed66b9cbe648f8ae184151f8022bc6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1809efef5bf44408b7ead5c76b1f5389", async() => {
                 BeginContext(567, 32, true);
                 WriteLiteral("\r\n        <input name=\"category\"");
                 EndContext();
