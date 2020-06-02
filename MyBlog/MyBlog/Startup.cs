@@ -45,6 +45,9 @@ namespace MyBlog
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<IGalleryService, GalleryService>();
             services.AddTransient<IGalleryImageRepository, GalleryImageRepository>();
+            services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

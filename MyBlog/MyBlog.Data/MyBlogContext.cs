@@ -14,5 +14,6 @@ namespace MyBlog.Data
 
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<GalleryImage> GalleryImages { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

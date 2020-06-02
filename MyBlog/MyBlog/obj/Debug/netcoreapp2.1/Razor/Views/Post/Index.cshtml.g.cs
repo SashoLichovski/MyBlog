@@ -56,7 +56,7 @@ namespace AspNetCore
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(92, 477, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "edaf3aff35244b67b65e7f03dd62b760", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77131a814dbf41f6aa38dcc4bc47ab10", async() => {
                 BeginContext(165, 397, true);
                 WriteLiteral(@"
         <input type=""submit"" value=""Skate"" name=""category"" class=""sportLink btn btn-dark text-light hvr-bubble-float-left"" />
@@ -118,7 +118,7 @@ namespace AspNetCore
             WriteLiteral("</p>\r\n                ");
             EndContext();
             BeginContext(895, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59288d3e51ff4c519e20436e194792cf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed0b5ccb0fb74b7382cc31fc31c77954", async() => {
                 BeginContext(998, 10, true);
                 WriteLiteral("Read story");
                 EndContext();
@@ -216,7 +216,7 @@ WriteAttributeValue("", 1341, Model[i].ImageUrl, 1341, 18, false);
             WriteLiteral("</p>\r\n                ");
             EndContext();
             BeginContext(1561, 117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc46fb66ecfa44d7b3912200bc67ca12", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb77fb8ee4fd4a65ba188443f56f9a97", async() => {
                 BeginContext(1664, 10, true);
                 WriteLiteral("Read story");
                 EndContext();

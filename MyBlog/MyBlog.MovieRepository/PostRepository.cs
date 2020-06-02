@@ -33,7 +33,7 @@ namespace MyBlog.Repository
 
         public List<Post> SearchPost(string search)
         {
-            return Context.Posts.Where(x => x.Title == search).ToList();
+            return Context.Posts.Where(x => x.Title.Contains(search)).ToList();
         }
 
         public List<Post> GetAll()

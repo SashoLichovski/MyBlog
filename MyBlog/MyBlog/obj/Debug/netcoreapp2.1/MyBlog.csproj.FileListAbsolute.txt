@@ -37,3 +37,4 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.V
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.csproj.CopyComplete
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.pdb
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Auth\SignIn.cshtml.g.cs
