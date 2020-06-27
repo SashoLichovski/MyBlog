@@ -1,12 +1,14 @@
-﻿using MyBlog.Data;
+﻿using Microsoft.AspNetCore.Http;
+using MyBlog.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MyBlog.Service.Interfaces
 {
     public interface IAuthService
     {
-        bool SignIn(string username, string password);
+        Task<bool> SignInAsync(string username, string password, HttpContext httpContext);
     }
 }

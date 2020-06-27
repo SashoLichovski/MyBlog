@@ -1,18 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MyBlog.Data;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using MyBlog.Service.Interfaces;
+using MyBlog.ViewModels.PostModels;
+using System.Collections.Generic;
 
 namespace MyBlog.Controllers
 {
     public class PostController : Controller
     {
+        private readonly IMapper mapper;
+
         public IPostService PostService { get; set; }
-        public PostController(IPostService postService)
+        public PostController(IPostService postService, IMapper mapper)
         {
             PostService = postService;
+            this.mapper = mapper;
         }
 
-        public IActionResult Index(string title, string category)
+        public IActionResult HomePage(string title, string category)
         {
             ViewBag.header = "X-news Presents";
 
@@ -22,38 +27,53 @@ namespace MyBlog.Controllers
             }
             var postList = PostService.GetAllByCategory(category);
 
-            var searchedPosts = PostService.SearchPost(title);
+            var convertedList = new List<HomePageModel>();
+            foreach (var post in postList)
+            {
+                convertedList.Add(mapper.Map<HomePageModel>(post));
+            }
+
             if (title != null)
             {
-                postList = searchedPosts;
+                var searchedPosts = PostService.SearchPost(title);
+                var convertedSearch = new List<HomePageModel>();
+                foreach (var post in searchedPosts)
+                {
+                    convertedSearch.Add(mapper.Map<HomePageModel>(post));
+                }
+                convertedList = convertedSearch;
             }
-            return View(postList);
+
+
+            return View(convertedList);
         }
 
         public IActionResult StoryDetails(int id)
         {
             ViewBag.header = "Full story";
             var currentPost = PostService.GetById(id);
-            return View(currentPost);
+            var model = mapper.Map<PostDetailsModel>(currentPost);
+            return View(model);
         }
 
         public IActionResult CreatePost()
         {
             ViewBag.header = "Create new Post";
-            var newPost = new Post();
-            return View(newPost);
+            var newPostModel = new CreatePostModel();
+            return View(newPostModel);
         }
         [HttpPost]
-        public IActionResult CreatePost(Post post)
+        public IActionResult CreatePost(CreatePostModel model)
         {
             if (ModelState.IsValid)
             {
-            PostService.AddPost(post);
-            return Redirect("Index");
+                var post = mapper.Map<MyBlog.Data.Post>(model);
+                PostService.AddPost(post);
+                return Redirect("Index");
             }
             else
             {
-                return View(post);
+                return View(model);
             }
         }
 
@@ -61,12 +81,15 @@ namespace MyBlog.Controllers
         {
             ViewBag.header = "Manage posts";
             var posts = PostService.GetAll();
+
+            var convertedList = new List<ManagePostModel>();
+            posts.ForEach(x => convertedList.Add(mapper.Map<ManagePostModel>(x)));
             if (title != null)
             {
                 var searchedPosts = PostService.SearchPost(title);
                 posts = searchedPosts;
             }
-            return View(posts);
+            return View(convertedList);
         }
 
         public IActionResult DeletePost(int id)
@@ -82,9 +105,10 @@ namespace MyBlog.Controllers
             return View(post);
         }
         [HttpPost]
-        public IActionResult ModifyPost(Post post)
+        public IActionResult ModifyPost(ModifyPostModel model)
         {
             ViewBag.header = "Modify Post";
+            var post = mapper.Map<MyBlog.Data.Post>(model);
             PostService.UpdatePost(post);
             return RedirectToAction("ManagePosts");
         }

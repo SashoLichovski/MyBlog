@@ -1,5 +1,5 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@model MyBlog.Data.Post;
+@model MyBlog.ViewModels.PostModels.PostDetailsModel
 @{
     Layout = "_Layout";
 }
@@ -14,7 +14,7 @@
     <div>
         <span>Posted: @Model.DatePosted</span>
     </div>
-    <form asp-controller="Post" asp-action="Index">
+    <form asp-controller="Post" asp-action="HomePage">
         <input name="category" value="@Model.Category" style="display: none"/>
         <input type="submit" value="Go back" class="btn btn-dark text-light" style="margin-top: 20px"/>
     </form>

@@ -1,36 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using MyBlog.Data;
 using MyBlog.Service.Interfaces;
+using MyBlog.ViewModels.AuthModels;
+using System.Threading.Tasks;
 
 namespace MyBlog.Controllers
 {
     public class AuthController : Controller
     {
-        public IAuthService UserService { get; }
-        public AuthController(IAuthService usersService)
+        private readonly IAuthService authService;
+        private readonly IMapper mapper;
+
+        public AuthController(IAuthService authService, IMapper mapper)
         {
-            UserService = usersService;
+            this.authService = authService;
+            this.mapper = mapper;
         }
 
         public IActionResult SignIn()
         {
             ViewBag.header = "Enter username and password";
-            return View();
+            var model = new SignInModel();
+            return View(model);
         }
         [HttpPost]
-        public IActionResult SignIn(User user)
+        public async Task<IActionResult> SignIn(SignInModel model)
         {
             ViewBag.header = "Enter username and password";
+            var user = mapper.Map<MyBlog.Data.User>(model);
             if (ModelState.IsValid)
             {
-                var IsUserValid = UserService.SignIn(user.Username, user.Password);
+                var IsUserValid = await authService.SignInAsync(user.Username, user.Password, HttpContext);
                 if (IsUserValid)
                 {
-                    return RedirectToAction("Index", "Post");
+                    return RedirectToAction("HomePage", "Post");
                 }
                 else
                 {
@@ -38,7 +41,7 @@ namespace MyBlog.Controllers
                     return View(user);
                 }
             }
-            return View(user);
+            return View(model);
         }
     }
 }

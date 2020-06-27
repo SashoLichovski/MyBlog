@@ -18,17 +18,32 @@
 
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-light hvr-buzz-out" asp-controller="Post" asp-action="Index" ><h3>X - News</h3></a>
+        <a class="navbar-brand text-light hvr-buzz-out" asp-controller="Post" asp-action="HomePage" ><h3>X - News</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item hvr-grow-rotate">
+                        <a class="nav-link text-light navLink" asp-controller="Auth" asp-action="SignOut">Sign out</a>
+                    </li>
+                    <li class="nav-item hvr-grow-rotate">
+                        <a class="nav-link text-light navLink" asp-controller="Post" asp-action="ManagePosts">Manage Posts</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item hvr-grow-rotate">
+                        <a class="nav-link text-light navLink" asp-controller="Auth" asp-action="SignIn">Sign in</a>
+                    </li>
+                    <li class="nav-item hvr-grow-rotate">
+                        <a class="nav-link text-light navLink" asp-controller="User" asp-action="Register">Register</a>
+                    </li>
+                }
                 <li class="nav-item hvr-grow-rotate">
-                    <a class="nav-link text-light navLink" asp-controller="Auth" asp-action="SignIn">Sign in</a>
-                </li>
-                <li class="nav-item hvr-grow-rotate">
-                    <a class="nav-link text-light navLink" asp-controller="Post" asp-action="Index">Home</a>
+                    <a class="nav-link text-light navLink" asp-controller="Post" asp-action="HomePage">Home</a>
                 </li>
                 <li class="nav-item hvr-grow-rotate">
                     <a class="nav-link text-light navLink" asp-controller="Info" asp-action="AboutUs">About Us</a>
@@ -36,11 +51,9 @@
                 <li class="nav-item hvr-grow-rotate">
                     <a class="nav-link text-light navLink" asp-controller="Gallery" asp-action="Overview">Gallery</a>
                 </li>
-                <li class="nav-item hvr-grow-rotate">
-                    <a class="nav-link text-light navLink" asp-controller="Post" asp-action="ManagePosts">Manage Posts</a>
-                </li>
+
             </ul>
-            <form asp-controller="Post" asp-action="Index" id="searchForm" style="display: @display">
+            <form asp-controller="Post" asp-action="HomePage" id="searchForm" style="display: @display">
                 <input name="Title" value="" placeholder="Title search" id="searchInput" />
                 <input type="submit" value="Search" id="searchBtn" />
             </form>

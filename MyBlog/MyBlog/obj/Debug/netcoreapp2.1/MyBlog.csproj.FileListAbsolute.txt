@@ -22,10 +22,11 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.A
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.TagHelpers.input.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.TagHelpers.output.cache
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.RazorCoreGenerate.cache
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Auth\SignIn.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Gallery\Overview.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Info\AboutUs.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\CreatePost.cshtml.g.cs
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\Index.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\HomePage.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\ManagePosts.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\ModifyPost.cshtml.g.cs
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Post\storyDetails.cshtml.g.cs
@@ -37,4 +38,4 @@ C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.V
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.csproj.CopyComplete
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.dll
 C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\MyBlog.pdb
-C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\Auth\SignIn.cshtml.g.cs
+C:\Users\Sasho\Desktop\MVC\MyBlog\MyBlog\MyBlog\obj\Debug\netcoreapp2.1\Razor\Views\User\Register.cshtml.g.cs

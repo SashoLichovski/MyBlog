@@ -7,6 +7,7 @@ namespace MyBlog.Repository.Interfaces
 {
     public interface IUserRepository
     {
-        User GetUserByUsername(string username);
+        User GetByUsername(string username);
+        void Add(User user);
     }
 }
